@@ -25,7 +25,14 @@ h2,h3{
 }
 
 .product-container{
-  height: 90vh;
+  /* height: 90vh; */
+}
+
+.product-container h1{
+  font-size: 52px;
+    background: linear-gradient(to right,#ffbe3d 15%, #e5386b 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App-logo {
@@ -52,6 +59,52 @@ h2,h3{
 
 .App-link {
   color: #61dafb;
+}
+
+
+#example ul{
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  justify-content: center;
+  padding: 0;
+}
+
+#example
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#example button{
+  border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    color: white;
+    background: #655c5c;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#example  p{
+  font-size: 22px;
+  width: 720px;
+  line-height: 30px;
+}
+
+#example menu{
+  padding: 0;
+}
+
+
+
+#example button:hover{
+  background-color:#1f1f20;
+}
+
+#example button.active {
+  background-color: #353536;
 }
 
 @keyframes App-logo-spin {
