@@ -3,17 +3,134 @@
 }
 
 
+.progressbar-container
+{
+    height: 20px;
+    width: 400px;
+    border: 2px grey solid;
+    border-radius: 4px;
+    position: relative;
+    overflow: hidden;
+}
+
+.progressbar-container > span{
+  position: absolute;
+  left: 50%;
+  top: 0;
+  color: black;
+}
+
+#progress123
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#progress123 > button{
+  padding: 10px;
+  margin-right: 32px;
+}
+
+
+
+
+.task-container{
+  display: flex;
+  border: 1px grey solid;
+  border-radius: 4px;
+  box-shadow: #282c34;
+  width: 100%;
+  height: 50px;
+  align-items: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  margin-bottom: 8px;
+}
+
+input[type='checkbox']
+{
+  height: 20px;
+  width: 20px;
+}
+
+.parentDiv
+{
+  width: 400px;
+  height: 600px;
+  border: 2px grey solid;
+  margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+.add-task > button
+{
+  height: 25px;
+  padding: 2px;
+  width: 100px;
+}
+
+
+.otp-input {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #b3b1b1;
+  margin-left: 4px;
+}
+
+#todo123
+{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  height: 100vh;
+
+}
+
+
+
+.todo-container
+{
+  height: 600px;
+  border: 2px grey solid;
+  width: 416px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+
+.title-container{
+  justify-content:flex-end;
+  display: flex;
+  align-items: center;
+  width: 100%;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 18px;
+}
+
+.progressbar
+{
+  height: 100%;
+  width: 100%;
+  background-color: rgb(102, 114, 82);
+}
+
 .section-footer{
   padding: 20px;
   background-color: slategray;
   padding: 20px;
   color: white;
-  height: 200px;
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 40px;
+  
 }
-
 
 .section-header{
   background-color:slategray;
@@ -23,6 +140,15 @@
 h2,h3{
   margin: 0;
   padding: 0;
+}
+
+
+
+.product-container h1{
+  font-size: 52px;
+    background: linear-gradient(to right,#ffbe3d 15%, #e5386b 100%);
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .App-logo {
@@ -38,18 +164,69 @@ h2,h3{
 
 .App-header {
   background-color: #282c34;
-  min-height: 100vh;
+  padding: 10px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  margin-bottom: 40px;
 }
 
 .App-link {
   color: #61dafb;
 }
+
+
+#example ul{
+  display: flex;
+  list-style-type: none;
+  gap: 8px;
+  justify-content: center;
+  padding: 0;
+}
+
+#example
+{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#example button{
+  border: none;
+    padding: 15px 32px;
+    font-size: 16px;
+    color: white;
+    background: #655c5c;
+    border-radius: 8px;
+    cursor: pointer;
+
+}
+
+#example  p{
+  font-size: 22px;
+  width: 720px;
+  line-height: 30px;
+}
+
+#example menu{
+  padding: 0;
+}
+
+
+
+#example button:hover{
+  background-color:#1f1f20;
+}
+
+#example button.active {
+  background-color: #353536;
+}
+
+
+
+
 
 @keyframes App-logo-spin {
   from {
